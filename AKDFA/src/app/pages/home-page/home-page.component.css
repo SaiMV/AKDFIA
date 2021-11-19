@@ -1,0 +1,217 @@
+
+.container{
+    position: relative;
+    height:100%;
+    width:100%;
+    box-shadow: -1px 1px 7px 2px rgba(0, 0, 0, 0.2), 1px 8px 4px 0 rgba(0, 0, 0, 0.04);
+}
+.header-text{
+    width: 100%;
+    position: absolute;
+    padding-top: 10px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.header-text-main{
+    padding-left: 100px;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.header-text-main-sub{
+    padding-left: 100px;
+    font-size: 12px;
+}
+.big-image{
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+    background-origin: border-box;
+}
+ .big-image-url1{
+    background-image: url('../../../assets/images/HomeScreenImag2.png');
+    /* min-height: 300px; */
+    height: 75%;
+    /* top: calc(100vh - 10px); */
+    /* bottom: 0px; */
+    /* position: absolute; */
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+ }
+ 
+ @media only screen and (min-width: 800px) and (max-width: 1024px) {
+
+   
+    .big-image-url1{
+        height: 450px;
+  }
+
+  .big-image {
+    background-size: 100% 450px;
+}
+  .welcome-loader{
+    /* padding-top: calc((100% - 100px ) / 2) !important; */
+  }
+  .loader-name {
+    font-size: 22px !important;
+    }
+    
+}
+
+ @media only screen and (min-width: 601px) and (max-width: 800px) {
+    .big-image-url1{
+        height: 400px;
+  }
+
+  .big-image {
+    background-size: 100% 400px;
+}
+  .welcome-loader{
+    /* padding-top: calc((100% - 100px ) / 2) !important; */
+  }
+  .loader-name {
+    font-size: 22px !important;
+}
+
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+}
+ @media only screen and (max-width: 600px) {
+    .big-image-url1{
+        height: 300px;
+  }
+  .header-text-main {
+    padding-left: 100px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+  .big-image {
+    background-size: 100% 300px;
+}
+  .welcome-loader{
+       /* padding-top: calc((100% - 0px ) / 2) !important; */
+  }
+  .loader-name {
+      font-size: 18px !important;
+  }
+  .loader-job
+  {
+    font-size: 14px !important;
+   
+  }
+  .details-about-AKDFA
+  {
+    font-size: 12px !important;
+ 
+  }
+  .header-text-main-sub {
+    padding-left: 100px;
+    font-size: 9px;
+}
+
+}
+
+
+.loader-name {
+    color: #292626;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: -2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 200;
+    margin-top: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 1px;
+
+}
+.loader-name-animation {
+    -webkit-animation: loader-name 1s 1 ease-in;
+            animation: loader-name 1s 1 ease-in;
+}
+@-webkit-keyframes loader-name {
+    0% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes loader-name {
+    0% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.loader-job {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 5px;
+    color: #b4b0b0;
+    font-size: 16px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 1px;
+
+}
+.loader-job-animation {
+    -webkit-animation: loader-job 1s 1 ease-in;
+            animation: loader-job 1s 1 ease-in;
+}
+@-webkit-keyframes loader-job {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes loader-job {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.welcome-loader{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 90%;
+    justify-content: center;
+}
+
+.details-about-AKDFA{
+    position: relative;
+    height: 100px;
+    width: calc(100% - 80px);
+    color: grey;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    opacity:1;
+    -webkit-transition: all 0.1s ease-in-out;
+    /* left: calc(( 100% - 400px) / 2); */
+    /* padding-top: calc(( 100vh - 200px) / 2); */
+}
+
+
